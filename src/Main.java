@@ -2,12 +2,20 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Circle c1 = new Circle(1.0);
-        System.out.println("The circle has radius of " +c1.getRadius() + " and area of " + c1.getArea());
+        Rectangle r1 = new Rectangle(1.2f, 3.4f);
+        System.out.println(r1);
+        Rectangle r2 = new Rectangle(1.2f, 3.4f);
+        System.out.println(r2);
 
-        Circle c2 = new Circle(2.0);
-        System.out.println("The circle has radius of " +c2.getRadius() + " and area of " + c2.getArea());
+        r1.setLength(5.6f);
+        r1.setWidth(7.8f);
+        System.out.println(r1);
+        System.out.println("length is: " + r1.getLength());
+        System.out.println("width is: " + r1.getWidth());
 
+
+        System.out.printf("area is: %.2f%n", r1.getArea());
+        System.out.printf("perimeter is: %.2f%n", r1.getPerimeter());
 
     }
 }
